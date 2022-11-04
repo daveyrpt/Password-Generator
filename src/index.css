@@ -1,0 +1,45 @@
+input[type="number"]
+{
+    background: transparent;
+    border: none;
+}
+
+.new-label:hover:after{
+
+    content: '📋';
+}
+
+.popup{
+ 
+    background-color: white;
+    
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup.active{
+    animation: popup 1s ease-in-out forwards;
+}
+
+@keyframes popup{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+    40%{
+        opacity: 1;
+        pointer-events: auto;
+        
+    }
+    80%{
+        opacity: 1;
+        pointer-events: auto;
+        
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+}

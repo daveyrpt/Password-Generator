@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+
+        <!-- CSS File -->
+        <link href="src/index.css" rel="stylesheet">
+        <link href="/dist/output.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+    <body class="flex justify-center items-center h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <!-- require further attention
+        <div class="popup" class= "border-red-700 border-2 ">
+            <h4 class= "border-red-700 border-2 w-12">Copied 📋</h4>
+        </div>
+        -->
+        <section class="container bg-custom-background flex flex-col flex-none w-auto">
+
+            <div class= "mt-16 ml-8">
+                <p class="text-white text-4xl font-semibold">Generate a</p>
+                <p class="text-custom-green text-4xl font-semibold">random password</p>
+                <p class="text-white text-md font-light py-4">Never use an insecure password again.</p>
+            </div>
+
+            <div>
+                <button id="generateButton" class= "bg-custom-green text-white my-10 ml-8 rounded-md w-48 py-1 ">Generate passwords</button>
+                <input type="number" id="passwordLength" placeholder="14" class="ml-8 w-24 rounded-md text-custom-green">
+
+            </div>
+
+            <div class="item flex flex-row justify-center">
+                <button id="generatedPasswords_1" class= "hover:bg-white hover:text-black bg-custom-background-button text-custom-green w-48 rounded-md mx-8 py-1 new-label">..</button> 
+                <button id="generatedPasswords_2" class= "hover:bg-white hover:text-black bg-custom-background-button text-custom-green w-48 rounded-md mr-8 py-1 new-label">..</button>
+            </div>
+
+            <div class="flex flex-row justify-start pt pt-2 pb-4">
+                <div class="mx-8 w-48">
+                    <input type="checkbox" id="useNumber" name="useNumber" class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-custom-green checked:border-custom-green focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" checked>
+                    <label for="useNumber" class="text-custom-green"> Include number</label><br>
+                </div>
+
+                <div class="mr-8 w-48">
+                    <input type="checkbox" id="useSymbol" name="useSymbol" class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-custom-green checked:border-custom-green focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" checked>
+                    <label for="useSymbol" class="text-custom-green"> Include symbol</label><br>
+                </div>          
+            </div>
+
+
+        </section>
+        
+
+    </body>
+
+    <!-- JavaScript File -->
+    <script src="src/index.js"></script>
+</html>
